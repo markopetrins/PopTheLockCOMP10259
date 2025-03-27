@@ -1,5 +1,7 @@
 # Pop The Lock Game
 
+![Pop The Lock Game Header](images/header.png)
+
 A web-based timing game created as part of COMP10259 coursework at Mohawk College. This project demonstrates the use of custom SVG graphics and animations to recreate the popular mobile game "Pop The Lock" using vanilla web technologies.
 
 ## 🎮 Game Description
