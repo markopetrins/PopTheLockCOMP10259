@@ -1,63 +1,142 @@
 /* body styling */
 body {
-    background-color: #343330;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 /* header styling */
 header {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+
 #headerImage {
-    width: 20%;
-    height: 20%;
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#headerImage:hover {
+    transform: scale(1.05);
+}
+
+/* main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
 }
 
 /* svg styling */
 svg {
     display: block;
-    margin: auto;
-    border: 5px solid black;
-    border-radius: 5%;
+    margin: 0 auto;
+    border: 8px solid #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    background-color: #2a2a2a;
 }
+
 .staticScore {
-    fill: white;
-    stroke: black;
+    fill: #ffffff;
     font: bold 30px sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
+
 #updatingScore {
-    fill: #D7907B;
-    stroke: black;
+    fill: #ff6b6b;
     font: bold 30px sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
+
 #staticEnd {
-    fill: red;
-    stroke: black;
+    fill: #ff6b6b;
     font: bold 30px sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
+
 #updateEnd {
-    fill: white;
-    stroke: black;
+    fill: #ffffff;
     font: bold 30px sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
+
 #controls {
-    fill: #D7907B;
-    stroke: black;
+    fill: #4ecdc4;
     font: bold 25px sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 /* button styling */
 .btn-primary {
-    color: black;
-    background-color:#D7907B ;
+    color: white;
+    background-color: #4ecdc4;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
+.btn-primary:hover {
+    background-color: #45b7ae;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+#startBtn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startBtn:hover {
+    fill: #45b7ae;
+    transform: scale(1.05);
+}
+
+#startButtonContainer {
+    cursor: pointer;
+}
+
 .text-center {
-    padding: 10px;
+    padding: 20px;
 }
 
 /* footer styling */
 footer {
-    padding: 30px;
-    color: #5DB7DE;
+    padding: 20px;
+    color: #4ecdc4;
     text-align: center;
+    background-color: #2a2a2a;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Game elements */
+#lock {
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+}
+
+#point {
+    filter: drop-shadow(0 0 5px rgba(255,255,0,0.5));
+}
+
+#pin {
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
 }
