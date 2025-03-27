@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Pop The Lock - A fun and challenging timing game">
     <meta name="author" content="Marko Petrina">
     <link rel="stylesheet" href="styles.css">
@@ -15,9 +15,9 @@
         <img id="headerImage" src="images/header.png" alt="Pop The Lock Game Header">
     </header>
     <main>
-        <svg width="400" height="600">
-            <text x="130" y="50" class="staticScore">Score:</text>
-            <text id="updatingScore" x="240" y="51">0</text>
+        <svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMid meet">
+            <text x="110" y="50" class="staticScore">Score:</text>
+            <text id="updatingScore" x="200" y="51">0</text>
             <text id="controls" x="80" y="95">Press the Spacebar</text>
             <circle id="lock" cx="200" cy="300" r="90" stroke-width="30" fill="none" stroke="#343330" />
             <circle id="point" cx="290" cy="300" r="10" fill="yellow" />
@@ -31,9 +31,7 @@
         </svg>
     </main>
     <footer>
-        <div>
-            <h3>© 2023, Marko Petrina, Mohawk College</h3>
-        </div>
+        <h3>© 2023, Marko Petrina, Mohawk College</h3>
     </footer>
     <script src="functions.js"></script>
 </body>
