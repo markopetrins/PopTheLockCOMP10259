@@ -1,8 +1,3 @@
-/**
- * Marko Petrina, 000906417
- * March 15, 2023
- * This file is used to store various functions dealing with both strings and integers
- */
 const startBtn = document.getElementById("startBtn");
 const startButtonContainer = document.getElementById("startButtonContainer");
 const rect = document.getElementById("pin");
