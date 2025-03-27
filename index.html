@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- SA000906417: I Marko Petrina, 000906417 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. -->
+    <title>Pop The Lock</title>
+</head>
+
+<body>
+    <header>
+        <img id="headerImage" src="images/header.png" alt="header image">
+    </header>
+    <main class="container-md">
+        <svg width="400" height="600" style="background-color: #5DB7DE;">
+            <text x="130" y="50" class="staticScore">Score:</text>
+            <text id="updatingScore" x="240" y="51">0</text>
+            <text id="controls" x="80" y="95">Press the Spacebar</text>
+            <circle id="lock" cx="200" cy="300" r="90" stroke-width="30" fill="none" stroke="#343330" />
+            <circle id="point" cx="290" cy="300" r="10" fill="yellow" />
+            <rect id="pin" x="195" y="200" width="15" height="15" fill="#D7907B" stroke-width="10" />
+            <text id="staticEnd" x="100" y="450"></text>
+            <text id="updateEnd" x="80" y="490"></text>
+        </svg>
+        <div class="col-md-12 text-center">
+            <button type="button" id="startBtn" class="btn btn-lg btn-primary">Start Game</button>
+        </div>
+    </main>
+    <footer>
+        <div class="container-md">
+            <h3>© 2023, Marko Petrina, Mohawk College</h3>
+        </div>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+/* body styling */
+body {
+    background-color: #343330;
+}
+
+/* header styling */
+header {
+    text-align: center;
+    padding: 20px;
+}
+#headerImage {
+    width: 20%;
+    height: 20%;
+}
+
+/* svg styling */
+svg {
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 5%;
+}
+.staticScore {
+    fill: white;
+    stroke: black;
+    font: bold 30px sans-serif;
+}
+#updatingScore {
+    fill: #D7907B;
+    stroke: black;
+    font: bold 30px sans-serif;
+}
+#staticEnd {
+    fill: red;
+    stroke: black;
+    font: bold 30px sans-serif;
+}
+#updateEnd {
+    fill: white;
+    stroke: black;
+    font: bold 30px sans-serif;
+}
+#controls {
+    fill: #D7907B;
+    stroke: black;
+    font: bold 25px sans-serif;
+}
+
+/* button styling */
+.btn-primary {
+    color: black;
+    background-color:#D7907B ;
+}
+.text-center {
+    padding: 10px;
+}
+
+/* footer styling */
+footer {
+    padding: 30px;
+    color: #5DB7DE;
+    text-align: center;
+}
