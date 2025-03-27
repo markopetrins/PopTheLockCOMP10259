@@ -1,31 +1,25 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* body styling */
 body {
     background-color: #1a1a1a;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* header styling */
 header {
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     background-color: #2a2a2a;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 #headerImage {
-    width: 150px;
+    width: 300px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -36,49 +30,50 @@ header {
 
 /* main content */
 main {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    min-height: 0; /* Important for flex container */
+    padding: 20px;
+    flex: 1;
 }
 
 /* svg styling */
 svg {
-    max-width: 100%;
-    max-height: calc(100vh - 120px); /* Adjust based on header/footer height */
-    height: auto;
     display: block;
+    margin: 0 auto;
+    border: 8px solid #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    background-color: #2a2a2a;
 }
 
 .staticScore {
     fill: #ffffff;
-    font: bold 16px sans-serif;
+    font: bold 30px sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 #updatingScore {
     fill: #ff6b6b;
-    font: bold 16px sans-serif;
+    font: bold 30px sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 #staticEnd {
     fill: #ff6b6b;
-    font: bold 16px sans-serif;
+    font: bold 30px sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 #updateEnd {
     fill: #ffffff;
-    font: bold 16px sans-serif;
+    font: bold 30px sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 #controls {
     fill: #4ecdc4;
-    font: bold 14px sans-serif;
+    font: bold 25px sans-serif;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
@@ -121,14 +116,16 @@ svg {
 
 /* footer styling */
 footer {
-    padding: 5px;
+    padding: 20px;
+    color: #4ecdc4;
     text-align: center;
     background-color: #2a2a2a;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
 }
 
 footer h3 {
-    font-size: 12px;
     margin: 0;
+    font-size: 1.2rem;
 }
 
 /* Game elements */
@@ -142,75 +139,4 @@ footer h3 {
 
 #pin {
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
-}
-
-/* Add media queries for better mobile responsiveness */
-@media screen and (max-width: 600px) {
-    /* Adjust header */
-    header {
-        padding: 15px;
-    }
-    
-    #headerImage {
-        width: 200px;
-    }
-    
-    /* Adjust main content */
-    main {
-        padding: 10px;
-    }
-    
-    /* Adjust SVG text elements */
-    .staticScore {
-        font: bold 20px sans-serif;
-    }
-    
-    #updatingScore {
-        font: bold 20px sans-serif;
-    }
-    
-    #controls {
-        font: bold 18px sans-serif;
-    }
-    
-    #staticEnd, #updateEnd {
-        font: bold 20px sans-serif;
-    }
-    
-    /* Adjust footer */
-    footer h3 {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    #headerImage {
-        width: 150px;
-    }
-    
-    /* Further reduce text sizes */
-    .staticScore, #updatingScore {
-        font: bold 16px sans-serif;
-    }
-    
-    #controls {
-        font: bold 14px sans-serif;
-    }
-    
-    #staticEnd, #updateEnd {
-        font: bold 16px sans-serif;
-    }
-    
-    /* Adjust SVG text positions for smaller screens */
-    .staticScore {
-        x: 100;
-    }
-    
-    #updatingScore {
-        x: 190;
-    }
-    
-    #controls {
-        x: 60;
-    }
 }
